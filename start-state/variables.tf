@@ -3,5 +3,5 @@ variable "AZ_REGION" {
 }
 
 variable "Resource_Group" {
-  default = "terraform-state"
+  default = "terraform-state2"
 }
