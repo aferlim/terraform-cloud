@@ -1,5 +1,5 @@
 resource "azurerm_storage_account" "tfstate_sa" {
-  name                     = "tfstateltmserverlesspocnaldo"
+  name                     = "tfstatepocnaldo"
   resource_group_name      = azurerm_resource_group.serverless-group.name
   location                 = azurerm_resource_group.serverless-group.location
   account_tier             = "Standard"
@@ -12,7 +12,7 @@ resource "azurerm_storage_account" "tfstate_sa" {
 }
 
 resource "azurerm_storage_container" "tfstate_container" {
-  name                  = "tfstatecontainernaldo"
+  name                  = "tfstatenaldo"
   storage_account_name  = azurerm_storage_account.tfstate_sa.name
   container_access_type = "private"
 }
